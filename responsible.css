@@ -5,6 +5,11 @@
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
+  header img{
+    height: 80%;
+    margin: auto 0;
+  }
+
   .top{
     background-image: url(img/background-2.jpg);
   }
