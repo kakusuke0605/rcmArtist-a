@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>rcmArtist</title>
+  <link rel="stylesheet" href="/css/stylesheet.css">
+  <link rel="stylesheet" href="/css/responsible.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img class="header-icon" src="../images/icon.png">
+      <h1><a href="/">rcmArtist</a></h1>
+    </div>
+  </header>
+  <div class="result-wrapper">
+    <div class="container">
+      <h3>あなたにおすすめのアーティストはこちらです</h3>
+      <ul class="search-result">
+        <% rcm.forEach((artist) => { %>
+          <li><%= artist.name%></li>
+        <% })%>
+      </ul>
+      <a href="/" class="btn btn2">もう一度</a>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
